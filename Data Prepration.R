@@ -2,7 +2,7 @@ library(tidyr)
 library(plyr)
 library(openair)
 
-#Detecting missing values
+#counting missing values
 is.missing <- function(x) 
 {
   num = 0
@@ -14,7 +14,7 @@ is.missing <- function(x)
   }
   return(num)
 }
-#detecting negative values
+#counting negative values
 is.neg <- function(x) 
 {
   num = 0
